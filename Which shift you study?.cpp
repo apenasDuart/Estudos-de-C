@@ -8,10 +8,13 @@ int main(){
 	// Input and Output
 	cout << "Type in which shift you study (M= Morning | A= Afternoon | N= Night):\n";
 	cin >> v;
+	// command to remove case sensitive imported from library <<cctype>>
+	v = toupper(v);
 	// ERROR
 	while(v != 'M' && v != 'A' && v!= 'N'){
 		cout << "Invalid value. Please type again:\n";
 		cin >> v;
+		v = toupper(v);
 	}
 	// Conditional
 	if(v == 'M'){
