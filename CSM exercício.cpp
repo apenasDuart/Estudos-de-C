@@ -9,6 +9,13 @@ int main(){
 	// Input e Output
 	std:: cout << "Digite o salário para reajuste:\n";
     std:: cin >> sal;
+	  // Repetição caso o erro seja cometido
+     while(sal < 0 || std::cin.fail()){
+       std:: cin.clear();
+       std:: cin.ignore(10000,'\n');
+       std:: cout << "Erro: O salário inserido é inválido. Por favor redigite de forma correta:\n";
+       std:: cin >> sal;
+} 
     // Condicionais
         if(sal <= 280){
         	aum = sal * 0.20;
