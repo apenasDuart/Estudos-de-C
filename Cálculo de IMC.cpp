@@ -5,7 +5,8 @@ int main(){
     // Variáveis
     float peso, altura, IMC;
     // Input e Output + Cálculo prévio do IMC
-    printf("Informe seu peso:\n");
+    printf("Bem-vindo, aqui você poderá calcular seu IMC (esse cálculo leva em consideração que a idade deve ser superior a 15 anos.)")
+    printf("Por favor, informe seu peso:\n");
     scanf("%f", &peso);
     printf("Informe sua altura:\n");
     scanf("%f", &altura);
